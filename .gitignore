@@ -1,2 +1,4 @@
 ciddl
 __pycache__
+.env
+creds.json

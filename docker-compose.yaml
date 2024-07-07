@@ -13,6 +13,7 @@ services:
       - IS_PERSISTENT=TRUE
       - PERSIST_DIRECTORY=/chroma/chroma
       - ANONYMIZED_TELEMETRY=${ANONYMIZED_TELEMETRY:-TRUE}
+      - ALLOW_RESET=TRUE # Allows entire deletion of DB
     ports:
       - 8000:8000
     networks:

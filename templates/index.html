@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Hello, CIDDL!</h1>
+    <p>This is a basic example of how this could work.</p>
+    <form action="/api" method="POST" id="input-form">
+        <div class="form-group">
+            <label for="input">Name:</label>
+            <input type="text" id="input" name="user_input" placeholder="What is your question?" required></input>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <div id="output"></div>
+    <script>
+        document.getElementById("input-form").addEventListener('submit', function(event) {
+            event.preventDefault();
+            const input = document.getElementById("input").value;
+            console.log(input)
+            fetch('/api', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({"user_input": input})
+            }).then(response => response.json())
+                .then(data => {
+                    console.log(data)
+                    let output = document.getElementById("output");
+                    output.innerHTML = `<p>${data.response}</p>`;
+                })
+                .catch(error => console.error('Error:', error));
+        });
+
+    </script>
+</body>
+</html>
