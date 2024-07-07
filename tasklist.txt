@@ -1,5 +1,6 @@
 It's important to document what we need to do:
 
-
+(pre work) add a virtual environment
+(pre work) had to do pip install python-magic-bin
 1 Setup working chromadb (vector db) in local file path with docker compose - Complete: can be run with docker compose up -d
 2 Be able to take something from our ciddl websites and parse them into embeddings
