@@ -10,7 +10,7 @@ Upon loading in the necessary files for embedding in the LLM, you're now able to
 
 
 Sources for portions of code:
-Matt Williams’ RAG based implementation: https://www.youtube.com/watch?v=Ml179HQoy9o
+Matt Williams’ RAG based implementation: https://www.youtube.com/watch?v=Ml179HQoy9o<br>
 UI Chatbot video: https://www.codingnepalweb.com/create-chatbot-html-css-javascript/ 
 <br><br>
 Feel free to open a PR or submit an issue as you see fit!
