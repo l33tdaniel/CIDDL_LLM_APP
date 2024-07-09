@@ -7,3 +7,10 @@ If you want to run the following items, I would suggest making a virtual environ
 
 # After Installation
 Upon loading in the necessary files for embedding in the LLM, you're now able to go and open your browser to `localhost:5000` and use the chatbot as normal.
+
+
+Sources for portions of code:
+Matt Williams’ RAG based implementation: https://www.youtube.com/watch?v=Ml179HQoy9o
+UI Chatbot video: https://www.codingnepalweb.com/create-chatbot-html-css-javascript/ 
+<br><br>
+Feel free to open a PR or submit an issue as you see fit!
